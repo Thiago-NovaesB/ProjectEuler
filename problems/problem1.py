@@ -4,6 +4,7 @@ Created on Thu Aug  4 22:46:15 2022
 
 @author: thiag
 """
+#Find the sum of all the multiples of 3 or 5 below 1000.
 def an(x, r):
     if x%r == 0:
         return x - r

@@ -1,17 +1,22 @@
 # -*- coding: utf-8 -*-
 """
-Created on Thu Aug  4 23:03:32 2022
+Created on Fri Aug  5 16:30:05 2022
 
 @author: thiag
 """
 
-def sum_pa(a,b=100,n=100):
-    return (a+b)*n/2
+#What is the largest prime factor of the number 600851475143 ?
 
-def crazy_value(x=100):
-    value = 0
-    current_sum = sum_pa(1,x,x)
-    for i in range(1,x):
-        current_sum -= i
-        value += i*current_sum
-    return 2*value
+def divide(x, n):
+    if x % n == 0:
+        return x / n
+    else:
+        return x
+x = 600851475143
+
+n = 1
+while x != 1:
+    n += 1
+    x = divide(x, n)
+
+print(n)
